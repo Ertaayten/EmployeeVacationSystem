@@ -1,0 +1,37 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.TableColumn?>
+<?import javafx.scene.control.TableView?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.text.Font?>
+
+<AnchorPane prefHeight="400.0" prefWidth="600.0" xmlns="http://javafx.com/javafx/17" xmlns:fx="http://javafx.com/fxml/1">
+   <children>
+      <TableView fx:id="tableView" layoutX="42.0" layoutY="146.0" prefHeight="240.0" prefWidth="600.0" AnchorPane.bottomAnchor="0.0" AnchorPane.leftAnchor="0.0" AnchorPane.rightAnchor="0.0">
+        <columns>
+          <TableColumn fx:id="col_start_date" prefWidth="77.0" text="Start Date" />
+            <TableColumn fx:id="col_finish_date" prefWidth="96.0" text="Finish Date" />
+            <TableColumn fx:id="col_type" prefWidth="147.0" text="Type" />
+            <TableColumn fx:id="col_description" prefWidth="202.0" text="Description" />
+            <TableColumn fx:id="_col_is_approved" prefWidth="77.0" text="Is Approved" />
+        </columns>
+      </TableView>
+      <Button layoutX="42.0" layoutY="86.0" mnemonicParsing="false" onAction="#vacationAddInEmployeePageButton" prefHeight="32.0" prefWidth="190.0" text="Vacation Add">
+         <font>
+            <Font size="18.0" />
+         </font>
+      </Button>
+      <Label layoutX="178.0" layoutY="14.0" prefHeight="47.0" prefWidth="235.0" text="Employee Page" textFill="RED">
+         <font>
+            <Font size="32.0" />
+         </font>
+      </Label>
+      <Button layoutX="358.0" layoutY="86.0" mnemonicParsing="false" onAction="#vacationUpdateInEmployeePageButton" prefHeight="32.0" prefWidth="190.0" text="Vacation Update">
+         <font>
+            <Font size="18.0" />
+         </font>
+      </Button>
+   </children>
+</AnchorPane>
